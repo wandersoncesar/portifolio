@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Poppins:300,300i,400,700');
+
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.section-1 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 90vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1 .container-me {
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-1 h1, .section-1 h2, .section-1 h3 {
+    margin: 0px;
+}
+
+.section-1 h2 {
+    font-weight: 500;
+    color: #C21807;
+}
+
+.section-1 h3 {
+    font-weight: 100;
+    color: #c5c5c5;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    color: #000;
+}
+
+.section-2 h2, .section-2 h3 {
+    text-align: center;
+}
+
+.container-cta {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-cta {
+    border: solid 2px #aaa;
+    height: 30px;
+    border-radius: 3PX;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.container-cta {
+    width: 500px;
+}
+
+.section-2 .input-cta {
+    width: 300px;
+    float: left;
+}
+
+.section-2 .button-cta {
+    width: 170px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: solid 2px #C21807;
+    height: 35px;
+    background-color: #C21807;
+    color: #fff;
+}
