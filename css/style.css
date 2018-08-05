@@ -175,3 +175,27 @@ h3 {
     margin-top: 50px;
     width: 300px;
 }
+
+.social-media {
+    z-index: 10;
+    float: left;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    width: 140px;
+    margin-top: 50px;
+}
+
+.social-media img {
+    float: left;
+    width: 60px;
+}
+
+.social-media a:first-child {
+    margin-right: 10px;
+}
+
+.social-media a:last-child {
+    margin-left: 10px;
+}
