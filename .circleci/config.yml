@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - checkout
-      - run: gem update --system
+      - run: sudo gem update --system
       - run: gem install bundler jekyll
       - run: bundle install
       - run: jekyll build
