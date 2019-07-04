@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
+    working_directory: ~/blog
+
+    steps:
+      - checkout
+      - run:
+        name: Install Jekyll
+        command: gem install bundler jekyll
+      - run:
+        name: Build
+        command: jekyll build
