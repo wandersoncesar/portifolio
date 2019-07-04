@@ -9,9 +9,8 @@ jobs:
       - checkout
       - run: sudo gem update --system
       - run: gem install bundler jekyll
-      - run: bundler update --bundler
       - run: bundle install
-      - run: jekyll build
+      - run: bundle exec jekyll build
       - run: ls
 
 workflows:
