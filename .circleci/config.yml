@@ -13,3 +13,9 @@ jobs:
       - run:
         name: Build
         command: jekyll build
+
+        workflows:
+  version: 2
+  workflow:
+    jobs:
+        - build
