@@ -12,7 +12,7 @@ jobs:
       - run: gem install bundler jekyll
       - run: bundle install
       - run: bundle exec jekyll build
-      - run: git push <remote_name> --delete <branch_name>
+      - run: git origin --delete gh-pages
 
 workflows:
   version: 2
