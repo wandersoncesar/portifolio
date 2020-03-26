@@ -5,9 +5,9 @@
         <meta charset="utf-8">
     </header>
     <body>
-        <div class="container">
+        <div class="container-flex">
             <div class="name">
-                <span class="typewriter">Olá, eu sou Wanderson César</span>
+                <span class="type">Olá, eu sou Wanderson César</span>
             </div>
         </div>
     </body>
@@ -33,7 +33,7 @@
         text-shadow: 0px 0px 10px #666;
     }
 
-    .container {;
+    .container-flex {;
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -41,25 +41,23 @@
         height: 100vh;
     }
 
-    .typewriter {
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid orange; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em; /* Adjust as needed */
+    .type {
+        overflow: hidden;
+        border-right: .1em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .2em;
         animation:
-                typing 3.5s steps(27, end),
-                blink-caret .75s step-end infinite;
+                type 2s steps(40, end),
+                cursor .75s step-end infinite;
     }
 
-    /* The typing effect */
-    @keyframes typing {
+    @keyframes type {
         from { width: 0 }
         to { width: 100% }
     }
 
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
+    @keyframes cursor {
         from, to { border-color: transparent }
         50% { border-color: orange; }
     }
