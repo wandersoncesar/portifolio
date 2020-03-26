@@ -6,29 +6,31 @@
     </header>
     <body>
         <div class="container">
-            <div class="name">Olá, eu sou <span class="red">Wanderson César</span>_</div>
+            <div class="name">
+                <span class="typewriter">Olá, eu sou Wanderson César</span>
+            </div>
         </div>
     </body>
 </html>
 
 <style>
     body {
-        background-color: #222;
+        background-color: #111;
         padding: 0;
         margin: 0;
     }
 
-    .red {
-        color: #d10;
-        font-weight: normal;
-    }
-
     .name {
-        color: #fff;
+        color: #ddd;
         font-family: "Open Sans";
-        font-weight: bold;
+        font-weight: normal;
         text-transform: capitalize;
         font-size: 40px;
+    }
+
+    .name span {
+        display: inline-block;
+        text-shadow: 0px 0px 10px #666;
     }
 
     .container {;
@@ -37,5 +39,28 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+    }
+
+    .typewriter {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation:
+                typing 3.5s steps(27, end),
+                blink-caret .75s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
     }
 </style>
